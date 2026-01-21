@@ -1,5 +1,5 @@
 import { Scale, Heart, Award } from 'lucide-react';
-import profileImage from 'figma:asset/643addf9931c1006a7d71498a08f7178739245c6.png';
+import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 
 export function About() {
   return (
@@ -14,8 +14,8 @@ export function About() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16 max-w-5xl mx-auto">
           <div className="flex justify-center">
-            <img 
-              src={profileImage} 
+            <ImageWithFallback 
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" 
               alt="Dállete Oliveira - Advogada Previdenciária" 
               className="w-64 h-auto object-contain rounded-2xl shadow-xl"
             />

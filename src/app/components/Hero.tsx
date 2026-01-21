@@ -1,4 +1,4 @@
-import heroImage from 'figma:asset/372d21a71aa5e9251ad89450b108079bbbae5615.png';
+import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 
 export function Hero() {
   const scrollToContact = () => {
@@ -14,8 +14,8 @@ export function Hero() {
       className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#7D4A4A] to-[#9B6B6B] pt-20"
     >
       <div className="absolute inset-0 opacity-10">
-        <img 
-          src={heroImage} 
+        <ImageWithFallback 
+          src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&h=1080&fit=crop" 
           alt="" 
           className="w-full h-full object-cover"
         />

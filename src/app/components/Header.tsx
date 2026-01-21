@@ -1,8 +1,6 @@
-import image_c3bd10d0d3a21217d0ac9705240fbeeddca81803 from 'figma:asset/c3bd10d0d3a21217d0ac9705240fbeeddca81803.png';
-import image_df6393a207a955ad01a7a8a22665ef49b108bf1b from 'figma:asset/df6393a207a955ad01a7a8a22665ef49b108bf1b.png';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import logoImage from 'figma:asset/30913d275264528703bb5347a7487ccba75bdbec.png';
+import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,9 +19,9 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img 
-              src={image_c3bd10d0d3a21217d0ac9705240fbeeddca81803} 
-              alt="Dállete Oliveira" 
+            <ImageWithFallback 
+              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=200&h=80&fit=crop" 
+              alt="Dállete Oliveira Advocacia" 
               className="h-12 w-auto cursor-pointer"
               onClick={() => scrollToSection('home')}
             />
