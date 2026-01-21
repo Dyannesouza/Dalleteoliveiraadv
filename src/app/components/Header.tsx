@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,8 +18,8 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <ImageWithFallback 
-              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=200&h=80&fit=crop" 
+            <img 
+              src="https://i.imgur.com/your-logo-url.png"
               alt="Dállete Oliveira Advocacia" 
               className="h-12 w-auto cursor-pointer"
               onClick={() => scrollToSection('home')}
