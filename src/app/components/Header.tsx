@@ -19,7 +19,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
-              src="https://i.imgur.com/6WdGrEB.png"
+              src="https://i.imgur.com/6WdGrEB.jpeg"
               alt="Dállete Oliveira Advocacia" 
               className="h-12 w-auto cursor-pointer"
               onClick={() => scrollToSection('home')}

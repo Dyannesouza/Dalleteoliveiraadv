@@ -14,7 +14,7 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16 max-w-5xl mx-auto">
           <div className="flex justify-center">
             <img 
-              src="https://i.imgur.com/910zvK6.png"
+              src="https://i.imgur.com/910zvK6.jpeg"
               alt="Dállete Oliveira - Advogada Previdenciária" 
               className="w-64 h-auto object-contain rounded-2xl shadow-xl"
             />
