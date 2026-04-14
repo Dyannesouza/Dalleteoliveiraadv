@@ -115,11 +115,18 @@ export function Footer() {
             Todos os direitos reservados.
           </p>
           <div className="mt-4 flex justify-center">
-            <img
-              src={logo}
-              alt="Dállete Oliveira Logo"
-              className="h-16 w-auto opacity-80 rounded-[8px]"
-            />
+            <a
+              href="https://byte4team.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-100 transition-opacity"
+            >
+              <img
+                src={logo}
+                alt="Dállete Oliveira Logo"
+                className="h-16 w-auto opacity-80 rounded-[8px]"
+              />
+            </a>
           </div>
         </div>
       </div>
