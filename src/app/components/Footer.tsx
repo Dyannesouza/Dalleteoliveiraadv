@@ -1,5 +1,6 @@
 import { Scale, Instagram } from 'lucide-react';
 import { useEffect } from 'react';
+import logo from '../../imports/ffdfdd.png';
 
 export function Footer() {
   useEffect(() => {
@@ -110,9 +111,16 @@ export function Footer() {
 
         <div className="border-t border-[#E8D7C8]/20 pt-8 text-center">
           <p className="text-[#E8D7C8]/80 text-sm">
-            © {new Date().getFullYear()} Dállete Oliveira - Advocacia e Consultoria Jurídica. 
+            © {new Date().getFullYear()} Dállete Oliveira - Advocacia e Consultoria Jurídica.
             Todos os direitos reservados.
           </p>
+          <div className="mt-4 flex justify-center">
+            <img
+              src={logo}
+              alt="Dállete Oliveira Logo"
+              className="h-16 w-auto opacity-80 rounded-[8px]"
+            />
+          </div>
         </div>
       </div>
     </footer>
